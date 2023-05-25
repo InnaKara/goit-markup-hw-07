@@ -138,7 +138,11 @@
           <ul class="list work-list">
             <li class="cards-works">
               <img
-                src="./images/what-are-we-doing/pc.jpg"
+                srcset="
+                  ./images/what-are-we-doing/PC@1x.jpg 1x,
+                  ./images/what-are-we-doing/PC@2x.jpg 2x
+                "
+                src="./images/what-are-we-doing/PC@1x.jpg"
                 alt="computer"
                 width="360"
                 height="300"
@@ -146,7 +150,11 @@
             </li>
             <li class="cards-works">
               <img
-                src="./images/what-are-we-doing/mobile-app.jpg"
+                srcset="
+                  ./images/what-are-we-doing/mobile-app@1x.jpg 1x,
+                  ./images/what-are-we-doing/mobile-app@2x.jpg 2x
+                "
+                src="./images/what-are-we-doing/mobile-app@1x"
                 alt="mobile applications"
                 width="360"
                 height="300"
@@ -154,7 +162,11 @@
             </li>
             <li class="cards-works">
               <img
-                src="./images/what-are-we-doing/mobile-browser.jpg"
+                srcset="
+                  ./images/what-are-we-doing/mobile@1x.jpg 1x,
+                  ./images/what-are-we-doing/mobile@2x.jpg 2x
+                "
+                src="./images/what-are-we-doing/mobile@1x.jpg"
                 alt="mobile browser"
                 width="360"
                 height="300"
@@ -165,7 +177,7 @@
       </section>
       <!-- Наша команда -->
       <section class="section-team section">
-        <div class="container">
+        <div class="container box">
           <h2 class="section-heading">Our Team</h2>
           <ul class="list employees">
             <li class="holder">
@@ -181,7 +193,7 @@
               />
               <div class="employee-desc">
                 <h3 class="title-team">Mark Guerrero</h3>
-                <p class="description">Product Designer</p>
+                <p class="description-team">Product Designer</p>
                 <ul class="social list">
                   <li class="social-items">
                     <a
@@ -251,7 +263,7 @@
               />
               <div class="employee-desc">
                 <h3 class="title-team">Tom Ford</h3>
-                <p class="description">Frontend Developer</p>
+                <p class="description-team">Frontend Developer</p>
                 <ul class="social list">
                   <li class="social-items">
                     <a
@@ -321,7 +333,7 @@
               />
               <div class="employee-desc">
                 <h3 class="title-team">Camila Garcia</h3>
-                <p class="description">Marketing</p>
+                <p class="description-team">Marketing</p>
                 <ul class="social list">
                   <li class="social-items">
                     <a
@@ -391,7 +403,7 @@
               />
               <div class="employee-desc">
                 <h3 class="title-team">Daniel Wilson</h3>
-                <p class="description">UI Designer</p>
+                <p class="description-team">UI Designer</p>
                 <ul class="social list">
                   <li class="social-items">
                     <a
@@ -453,7 +465,7 @@
       </section>
       <!-- Customers -->
       <section class="section">
-        <div class="container">
+        <div class="container box">
           <h2 class="section-heading">Customers</h2>
           <ul class="customers list">
             <li class="customers-item">
@@ -541,7 +553,7 @@
 
     <!--------------- Футер----------- -->
     <footer class="container-footer">
-      <div class="container wrap-footer">
+      <div class="container box wrap-footer">
         <!-- Left-side -->
         <div class="left-side">
           <a class="bottom-logo link" href="./index.html">
@@ -731,19 +743,16 @@
     </div>
     <!-- Mobile Menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
+      <button class="menu-bt js-close-menu">
         <svg
+          class="close-mob"
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
+          width="8"
+          height="8"
         >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
+          <use class href="./images/icons.svg#icon-close-mob"></use>
         </svg>
       </button>
 
@@ -753,7 +762,7 @@
         <li><a href="" class="link">Contacts</a></li>
       </ul>
       <ul class="mobile-contacts list">
-        <li>
+        <li class="mob-li">
           <a class="mobile-tel link" href="tel:+110001111111"
             >+11 (000) 111-11-11</a
           >
