@@ -228,6 +228,13 @@ img {
     display: none;
   }
 }
+@media only screen and (min-width: 767px) and (max-width: 1157px) {
+  .contact-info {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}
+
 .contact {
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -245,8 +252,6 @@ img {
 }
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .mail-address {
-    padding-top: 16px;
-    padding-bottom: 12px;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
@@ -255,11 +260,15 @@ img {
 }
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .tel-address {
-    padding-bottom: 16px;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .li-mail {
+    margin-bottom: 12px;
   }
 }
 
@@ -1054,6 +1063,7 @@ img {
   resize: none;
   border-radius: 4px;
   transition: border-color var(--animation);
+  border: 1px solid rgba(46, 47, 66, 0.4);
 }
 .modal-form-comment::placeholder {
   font-family: "Roboto";
